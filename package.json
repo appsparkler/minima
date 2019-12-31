@@ -5,6 +5,9 @@
   "repository": "git@github.com:appsparkler/jekyll-minima",
   "author": "Akash <subs@appsparkler.com>",
   "license": "MIT",
+  "scripts":{
+    "start": "bundle exec jekyll serve --watch --livereload"
+  },
   "dependencies": {
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",

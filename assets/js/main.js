@@ -1,1 +1,1 @@
-alert('hello world')
+import 'node_modules/bootstrap'

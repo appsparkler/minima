@@ -5,12 +5,18 @@
   "repository": "git@github.com:appsparkler/jekyll-minima",
   "author": "Akash <subs@appsparkler.com>",
   "license": "MIT",
-  "scripts":{
-    "start": "bundle exec jekyll serve --watch --livereload"
+  "scripts": {
+    "start": "bundle exec jekyll serve --watch --livereload",
+    "webpack": "webpack --output-path ./assets"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   }
 }

@@ -1,11 +1,30 @@
-<div class="card rounded-0">
-  <img
-    src="https://placehold.it/300x120"
-    class="card-img-top rounded-0" 
-    alt="...">
+<div class="card rounded-0 my-2">
+  <figure>
+    <img
+      src="https://placehold.it/300x170"
+      class="card-img-top rounded-0"
+      alt="...">
+      <figcaption class="p-1">
+        <span class="badge badge-primary">
+          Javascript
+        </span>
+        <span class="badge badge-success">
+          HTML
+        </span>
+      </figcaption>
+  </figure>
   <div class="card-body">
-    <h5 class="card-title">What is the...</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Read More...</a>
+    <h5 class="card-title">{{ post.title | escape | truncate:14 }}</h5>
+    <p class="card-text">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <small class="post-meta">Written on {{ post.date | date: date_format }}...</small>
+      <p>
+        {{ post.excerpt | truncate:20 }}
+      </p>
+      {%- if site.show_excerpts -%}
+      {%- endif -%}
+    <a  href="{{ post.url | relative_url }}" class="btn btn-primary">
+      Read More
+    </a>
   </div>
 </div>

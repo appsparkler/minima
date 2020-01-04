@@ -7,7 +7,7 @@ module.exports = {
     output: {
       path: __dirname + '/assets/js',
       filename: '[name].[contenthash:8].js',
-      publicPath: '/assets/'
+      publicPath: '/assets/js'
 
     },
     plugins: [

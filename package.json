@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "bundle exec jekyll serve --watch --livereload",
-    "webpack": "webpack --output-path ./assets"
+    "webpack": "webpack"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",

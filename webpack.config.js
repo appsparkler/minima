@@ -1,18 +1,23 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 
 module.exports = {
     mode: 'production',
     entry: './src/index.js',
     output: {
-      path: __dirname + '/assets',
-      filename: 'js/[name].[contenthash:8].js',
+      path: __dirname + '/assets/js',
+      filename: '[name].[contenthash:8].js',
       publicPath: '/assets/'
 
     },
     plugins: [
+      new CleanWebpackPlugin({
+        cleanStaleWebpackAssets: false,
+        protectWebpackAssets: true
+      }),
       new HtmlWebpackPlugin({
         template: './src/index.ejs',
-        filename: '../_includes/webpacked-libs.html'
+        filename: '../../_includes/webpacked-libs.html'
       })
     ]
 }

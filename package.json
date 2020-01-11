@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "bundle exec jekyll serve --watch --livereload",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "build": "gem build appsparkler"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",

@@ -11,6 +11,8 @@ version. e.g. https://github.com/jekyll/minima/blob/v2.5.0/README.md*
 [Theme preview](https://jekyll.github.io/minima/)
 
 ![minima theme preview](/screenshot.png)
+## Building The Theme
+`gem build appsparkler`
 
 ## Installation
 
